@@ -8,7 +8,7 @@ import Home from './components/Home'
 
 
 
-function App() {
+function Rout() {
   return (
     <BrowserRouter>
       <nav>
@@ -26,6 +26,10 @@ function App() {
   );
 }
 
-export default App;
+export default function App (){
+return(
+  <Rout/>
+)
+}
 
 
