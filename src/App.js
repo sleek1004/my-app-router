@@ -1,35 +1,19 @@
+import React from 'react';
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 
-import React from 'react'
-import { BrowserRouter as Routes, Route, Link, BrowserRouter } from 'react-router-dom';
-import Home from './components/Home'
+const Home = () => <h1>Home</h1>;
 
-
-
-
-
-
-function Rout() {
+export default function App() {
   return (
     <BrowserRouter>
       <nav>
-        <li><Link to ="/">Home</Link></li>
-     
+        <li><Link to="/">Home</Link></li>
       </nav>
-     
-     <Routes>
+
+      <Routes>
         <Route path="/" element={<Home />} />
-        
-       
       </Routes>
-    
     </BrowserRouter>
   );
 }
-
-export default function App (){
-return(
-  <Rout/>
-)
-}
-
 
